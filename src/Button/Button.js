@@ -1,6 +1,7 @@
 import { forwardRef } from "react";
 import { cx, css } from '@emotion/css';
-import { PropTypes } from 'prop-types'
+import { PropTypes } from 'prop-types';
+import '@testing-library/jest-dom';
 
 const buttonStyles = (bgColor, color, width, height, bgColorHover, colorHover, borderRadius) => css`
   background-color: ${bgColor};

@@ -1,5 +1,6 @@
 import { render } from "@testing-library/react";
 import ContainerFlex from "./ContainerFlex";
+import '@testing-library/jest-dom'
 
 describe('@componets/ContainerFlex', () => {
   it('onmwedoifnwonf', () => {
@@ -39,4 +40,17 @@ describe('@componets/ContainerFlex', () => {
     expect(ContainerFlexTest).toBeDefined();
 
   })
+
+  it('Comprobar si tiene background azul',() => {
+    // arrange
+
+    const { getByRole } = render(
+        <ContainerFlex role='banner' bgColor='blue' />
+    )
+    // act
+
+    const ContainerFlexTest = getByRole('banner')
+    // assert
+    expect(ContainerFlexTest).toHaveStyle('background-color:blue;');
+})
 });

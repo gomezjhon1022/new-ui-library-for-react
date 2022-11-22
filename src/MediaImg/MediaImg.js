@@ -1,6 +1,7 @@
 import { forwardRef } from "react";
-import { cx, css } from "@emotion/csss";
-import { PropTypes } from "prop-types"
+import { cx, css } from "@emotion/css";
+import { PropTypes } from "prop-types";
+import '@testing-library/jest-dom'
 
 const MediaImgStyles = (width, height, borderRadius) => css`
   width: ${width || "100px"};
