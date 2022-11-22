@@ -28,7 +28,7 @@ const ContainerFlex = forwardRef((props, ref) => {
     ...otherProps
   } = props;
   return (
-    <Section
+    <section
       ref={ref}
       {...otherProps}
       className={cx(ContainerFlexStyles(width, height, bgColor, flexDirection, alignContent, alignItems, justifyContent, gap), className)}
