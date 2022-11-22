@@ -1,5 +1,5 @@
 import { createElement, forwardRef } from "react";
-import { cx,  css } from '@emotion/css;'
+import { cx,  css } from '@emotion/css';
 import PropTypes from 'prop-types';
 
 const TextStyles = (fontWeight, fontSize, lineHeight) => css`
